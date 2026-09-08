@@ -1,4 +1,4 @@
-﻿using DotNetEnv;
+using DotNetEnv;
 using Microsoft.Extensions.AI;
 using OpenAI;
 using OllamaSharp;
