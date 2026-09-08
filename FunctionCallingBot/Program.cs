@@ -12,19 +12,6 @@ Console.WriteLine("Hello, World!");
 
 string provider = (Environment.GetEnvironmentVariable("AI_PROVIDER") ?? "OpenAI").ToLowerInvariant();
 
-switch (provider)
-{
-    case "openai":
-        Console.WriteLine("Using OpenAI as the AI provider.");
-        break;
-    case "azure":
-        Console.WriteLine("Using Azure as the AI provider.");
-        break;
-    default:
-        Console.WriteLine($"Unknown AI provider: {provider}. Defaulting to OpenAI.");
-        break;
-}
-
 // -------------------------------------------------------------------------------------------
 // STEP 1: Build the Kernel AI client based on the provider
 // The Kernel is Semanctic Kernel's dependency injection container that manages AI clients and other services.
